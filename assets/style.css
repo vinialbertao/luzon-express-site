@@ -6,7 +6,7 @@ img{max-width:100%;display:block}
 a{color:var(--green)}a:hover{color:#08391D}
 h1,h2,h3{font-family:Archivo,sans-serif;margin:0}
 p{margin:0}
-.wrap{max-width:1200px;margin:0 auto;padding-left:24px;padding-right:24px}
+.wrap{max-width:1320px;margin:0 auto;padding-left:24px;padding-right:24px}
 .dark{background:var(--ink);color:#fff}
 .eyebrow{font-size:13px;font-weight:700;letter-spacing:.16em;color:var(--green);text-transform:uppercase}
 .dark .eyebrow,.eyebrow.lime{color:var(--lime)}
@@ -36,8 +36,9 @@ p{margin:0}
 @media (max-width:760px){.nav a.link{display:none}}
 
 /* hero */
-.hero .wrap{padding-top:72px;padding-bottom:88px;display:flex;flex-wrap:wrap;align-items:center;gap:56px}
-.hero-text{flex:1 1 520px;min-width:0;display:flex;flex-direction:column;gap:26px}
+.hero .wrap{padding-top:72px;padding-bottom:88px;display:flex;flex-wrap:wrap;align-items:center;gap:48px}
+.hero-text{flex:0 1 480px;min-width:0;display:flex;flex-direction:column;gap:26px}
+@media (max-width:1040px){.hero-text{flex:1 1 100%}}
 .kicker{display:inline-flex;align-self:flex-start;align-items:center;gap:10px;font-size:13px;font-weight:700;letter-spacing:.16em;color:var(--lime)}
 .kicker:before{content:"";width:28px;height:2px;background:var(--lime)}
 .hero h1{font-weight:900;font-size:clamp(42px,6vw,76px);line-height:.98;letter-spacing:-.03em}
@@ -48,8 +49,8 @@ p{margin:0}
 .stats strong{font-family:Archivo,sans-serif;font-weight:900;font-size:32px}
 .stats span{font-size:14px;color:var(--muted-dark2)}
 .stats i{width:1px;background:var(--line-dark)}
-.hero-media{flex:1 1 440px;min-width:0;max-width:600px;position:relative}
-.hero-media img{width:100%;height:auto;border-radius:20px;border:1px solid #1E3326}
+.hero-media{flex:1 1 520px;min-width:0;position:relative}
+.hero-media img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;object-position:60% 50%;border-radius:20px;border:1px solid #1E3326}
 .badge{position:absolute;left:-20px;bottom:-24px;background:#fff;color:#0B1410;border-radius:14px;padding:14px 18px;display:flex;align-items:center;gap:12px;box-shadow:0 12px 32px rgba(0,0,0,.35)}
 .badge .ic{width:40px;height:40px;border-radius:10px;background:var(--green);display:flex;align-items:center;justify-content:center}
 .badge strong{display:block;font-size:15px}.badge small{display:block;font-size:13px;color:var(--muted)}
